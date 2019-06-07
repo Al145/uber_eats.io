@@ -1,0 +1,587 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    max-width: 956px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+header {
+    height: 72px;
+    background: white;
+    box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    margin-right: 20px;
+    margin-left: 9px;
+}
+
+.btn_more {
+    display: flex;
+    justify-content: center;
+}
+
+
+.asap {
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1d1d1d;
+    outline: none;
+    height: 40px;
+    width: 65px;
+    background: #fff;
+    transition: .4s;
+}
+
+ .asap:hover, .signIn:hover {
+    color: white;
+    background-color: black;
+} 
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+.to {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #626262;
+    margin: 0 9px;
+}
+
+.address {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    width: 292px;
+    height: 40px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1D1D;
+    background: url(./images/Group.png) no-repeat 11px 12px;
+    padding-left: 36px;
+    margin-right: 76px;
+    outline: none;
+}
+
+.signIn {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    background: #fff;
+    outline: none;
+    transition: .4s;
+}
+
+.register {
+    width: 80px;
+    height: 40px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+    background: #262626;
+    color: white;
+    outline: none;
+    transition: .4s;
+}
+
+.register:hover {
+    color: black;
+    background-color: white;
+}
+
+.register, .signIn {
+    margin-left: 16px;
+}
+
+.register {
+    margin-right: 15px;
+}
+
+.basket {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    width: 18.95px;
+    height: 15.79px;
+}
+
+.search {
+    height: 40px;
+    background: url(./images/search.svg) no-repeat 0 9px;
+    background-size: 22px 21.9px;
+    border: none;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #626262;
+    opacity: 0.7;
+    outline: none;
+    width: 962px;
+    margin-top: 50px;
+}
+
+hr {
+    color: #757575;
+    size: 1px;
+    width: 956px;
+    opacity: 0.3;
+}
+
+section h1 {
+    margin-top: 55px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+.restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.food {
+    min-width: 85%;
+    max-width: 100%;
+}
+
+.food:hover {
+    transition: all 1s ease-in-out;
+    -o-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    cursor: pointer;
+}
+
+.macdonalds:hover, .wokwei:hover, .yizha:hover, .musafir:hover, .wokwei-2:hover, .milkbar:hover, .mimosa:hover, 
+.tobe:hover, .druzi:hover {
+    background: #75757509;
+    transition: all 1s ease-in-out;
+}
+
+.res_name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1D1D1D;
+    position: relative;
+    transition: color .3s linear;
+}
+
+.res_class {
+    font-size: 14px;
+    line-height: 20px;
+    color: #626262;
+    opacity: 0.9;
+}
+
+.cook_time {
+    font-size: 13px;
+    color: #1D1D1D;
+}
+
+.res_name:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.res_name:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    display: none;
+    min-width: 85%;
+    max-width: 100%;
+}
+
+.res_name:hover:after {
+    display: block;
+}
+
+
+.white-logo:hover, .logo:hover {
+    animation: animate 10s linear forwards;
+    cursor: pointer;
+} 
+
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg) translateY(0px);
+		opacity 1;
+		filter: blur(1px);
+    }
+
+	100% {
+		transform: rotate(1deg) translateY(-110px);
+		opacity: 0;
+		filter: blur(20px);
+    }
+}
+
+footer {
+    background: #262626;
+    width: 100%;
+    height: 100%;
+}
+
+.white-logo {
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+.lang {
+    background: url(./images/arrow.svg) no-repeat 203px 12px, 
+    url(./images/world.svg) no-repeat 16px 12px #3B3B3B;;
+    width: 227px;
+    height: 40px; 
+    background-size: 16px 16px;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    padding-left: 48px;
+    padding-right: 30px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    outline: none;
+    -webkit-appearance: none;
+    transition: color .3s linear;
+}
+
+.lang:hover {
+    color: rgb(6, 196, 6);
+}
+
+span {
+    color: white;
+}
+
+.green_hash {
+    margin-right: -3px;
+    color: #49a144;
+}
+
+.uber-eats_hash {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.social {
+    display: flex;
+    width: 92px;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+.instagram:hover, .facebook:hover, .twitter:hover, .basket:hover, .market_app_img1:hover, .market_app_img2:hover,
+.shape_up:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+}
+
+li {
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.inform li a {
+    text-decoration: none;
+    color: white;
+    transition: color .3s linear;
+}
+.inform li a:hover, .footer_3 li a:hover {
+    color: rgb(6, 196, 6);
+}
+
+.footer_part_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 35px;
+    gap: 16px;
+}
+
+.block-2, .block-3 {
+    margin-top: 15px;
+  }
+
+.mobile_market {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.market_app_img1 {
+    margin-right: 20px;
+}
+
+.market_app_img2 {
+    margin-left: 20px;
+}
+
+.footer_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    font-size: 11px;
+    line-height: 13px;
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.footer_3 li a {
+    text-decoration: none;
+    color: white;
+    transition: color .3s linear;
+}
+
+.shape_up {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #59BD5A;
+    border-radius: 2px;
+    right: 16px;
+    bottom: 24px;
+}
+
+.mob_nav {
+    display: none;
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 9px;
+    }
+
+    .logo img {
+        width: 119.23px;
+        height: 12.31px;
+    }
+
+    .address {
+        width: 215px;
+        margin-right: 50px;
+        transition: all 1s ease-in-out;
+    }
+
+    .asap, .address {
+        font-size: 13px;
+        transition: all 1s ease-in-out;
+    }
+
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+
+      section, .footer {
+          margin-left: 8px;
+      }
+
+      .search {
+          width: 500px;
+      }
+      .mob_nav {
+          display: none;
+      }
+
+      .res_name:after {
+        content: '';
+        display: block;
+        width: 308px;
+        height: 3px;
+        background-color: green;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 3;
+        display: none;
+    }
+
+}
+
+@media  (max-width: 639px) {
+    .asap, .to, .address {
+        display: none;
+    }   
+
+    section, .footer {
+        margin-left: 8px;
+    }
+
+    .restaurants {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .milkbar, .mimosa, .tobe, .druzi {
+          display: none;
+      }
+      
+      .mob_nav {
+        display: grid;
+        grid-template-columns: auto 1fr;
+      }
+
+
+      .asap_mob {
+        border: 1px solid #e0e0e0;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1d1d1d;
+        outline: none;
+        height: 40px;
+        width: 65px;
+        background: #fff;
+        transition: .4s;
+    }
+    .asap_mob:hover {
+        color: white;
+        background-color: black;
+    } 
+
+    .to_mob {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #626262;
+
+    }
+
+    .when {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 13px;
+        color: #626262;
+    }
+
+    .mob_part_1 {
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .mob_part_2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .address_mob {
+        border: 1px solid #E0E0E0;
+        border-radius: 2px;
+        width: 227px;
+        height: 40px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1D1D1D;
+        background: url(./images/Group.png) no-repeat 11px 12px;
+        padding-left: 36px;
+        margin-right: 76px;
+        outline: none;
+    }
+
+    .res_name:after {
+        content: '';
+        display: block;
+        width: 308px;
+        height: 3px;
+        background-color: green;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 3;
+        display: none;
+    }
+
+    .footer_part_2 {
+        grid-template-columns: 1fr;
+    }
+
+    .social {
+        margin-bottom: 44px;
+    }
+
+    .block-2, .block-3 {
+        margin-left: -37px;
+        margin-top: -30px;
+    }
+
+    .footer_3 {
+        grid-template-columns: 1fr;
+    }
+}
