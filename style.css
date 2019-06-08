@@ -465,7 +465,8 @@ li {
         top: 100%;
         left: 0;
         z-index: 3;
-        display: none;
+        opacity: 0;
+        transition: opacity .2s linear;
     }
 
 }
@@ -566,7 +567,8 @@ li {
         top: 100%;
         left: 0;
         z-index: 3;
-        display: none;
+        opacity: 0;
+        transition: opacity .2s linear;
     }
 
     .footer_part_2 {
